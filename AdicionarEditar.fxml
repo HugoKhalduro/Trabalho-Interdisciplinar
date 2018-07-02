@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.AdicionarEditarControlador">
+   <children>
+      <GridPane layoutX="20.0" layoutY="14.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="71.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.0" minWidth="10.0" prefWidth="419.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código" />
+            <Label text="Nome" GridPane.rowIndex="1" />
+            <Label text="Diretor" GridPane.rowIndex="2" />
+            <Label text="Genero" GridPane.rowIndex="3" />
+            <Label text="Roterista" GridPane.rowIndex="4" />
+            <TextField fx:id="txtCodigo" GridPane.columnIndex="1" />
+            <TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtDiretor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtGenero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtRoterista" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <HBox layoutX="122.0" layoutY="205.0" prefHeight="25.0" prefWidth="174.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Button fx:id="btnOK" layoutX="122.0" layoutY="205.0" mnemonicParsing="false" onAction="#cliqueOk" prefHeight="25.0" prefWidth="80.0" text="OK" />
+            <Button fx:id="btnCancelar" layoutX="199.0" layoutY="205.0" mnemonicParsing="false" onAction="#cliqueCancelar" prefWidth="80.0" text="Cancelar" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
